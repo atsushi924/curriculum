@@ -13,32 +13,33 @@ sort($numbers);
 var_dump($numbers);
 echo "<br>";
 
-$members = ["tanaka", "sasaki", "kimura", "yoshida", "uchida"];
-if (in_array("tanaka", $members)) {
-    echo "田中さんがいるよ！";
+$members = ["tanaka", "sasaki", "kimura", "yoshida", "uchida", "yamada"];
+if (in_array("kamiya", $members)) {
+    echo "神谷さんがいるよ！";
 } else {
-    echo "田中さんはいないよ！";
+    echo "神谷さんはいないよ！";
 }
 echo "<br>";
 
-$members = ["tanaka", "sasaki", "kimura", "yoshida", "uchida"];
-$atstr = implode("@", $members);
+$members = ["tanaka", "sasaki", "kimura", "yoshida", "uchida", "yamada"];
+$atstr = implode(",", $members);
 var_dump($atstr);
 echo "<br>";
 
 $atstr = implode($members);
-echo "<br>";
-
-$members = ["tanaka", "sasaki", "kimura", "yoshida", "uchida"];
-$atstr = implode("@", $members);
 var_dump($atstr);
 echo "<br>";
 
-$re_members = explode("@", $atstr);
+$members = ["tanaka", "sasaki", "kimura", "yoshida", "uchida", "yamada"];
+$atstr = implode(",", $members);
+var_dump($atstr);
+echo "<br>";
+
+$re_members = explode(",", $atstr);
 var_dump($re_members);
 echo "<br>";
 
-$str = "1,2,3,4,5";
+$str = "1,2,3,4,5,6";
 $array = explode(",",$str);
 var_dump($array);
 echo "<br>";
