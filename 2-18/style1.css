@@ -1,0 +1,23 @@
+body {
+  background-color:gray;
+}
+div{
+  text-align: center ;
+}
+
+h1.test{
+  color:white ;
+  border-bottom : 2px solid white ;
+}
+
+.question{
+  color:white ;
+}
+
+p{
+  color:white ;
+}
+
+.answer{
+  color:white ;
+}
